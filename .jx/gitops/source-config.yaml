@@ -8,5 +8,6 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: jenkins-teeest
     - name: text12
     scheduler: in-repo
