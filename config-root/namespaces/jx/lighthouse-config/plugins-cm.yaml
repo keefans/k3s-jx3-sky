@@ -6,6 +6,26 @@ data:
       repos:
       - keefans/k3s-jx3-sky
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - denglanlan/jenkins-teeest
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - denglanlan/python-http-test01
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - denglanlan/test-project-jenkins
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - denglanlan/test-project
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - denglanlan/text12
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -20,6 +40,86 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      denglanlan/jenkins-teeest:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      denglanlan/python-http-test01:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      denglanlan/test-project:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      denglanlan/test-project-jenkins:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      denglanlan/text12:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       keefans/k3s-jx3-sky:
       - config-updater
       - approve
@@ -49,6 +149,23 @@ data:
     - repos:
       - keefans/k3s-jx3-sky
       trusted_org: todo
+    - repos:
+      - denglanlan/jenkins-teeest
+      trusted_org: todo
+    - repos:
+      - denglanlan/python-http-test01
+      trusted_org: todo
+    - repos:
+      - denglanlan/test-project-jenkins
+      trusted_org: todo
+    - repos:
+      - denglanlan/test-project
+      trusted_org: todo
+    - repos:
+      - denglanlan/text12
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null

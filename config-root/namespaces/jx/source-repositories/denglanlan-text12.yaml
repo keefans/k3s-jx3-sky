@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: denglanlan
+    provider: github
+    repository: text12
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: denglanlan-text12
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/denglanlan/text12.git
+  org: denglanlan
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: text12
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/denglanlan/text12
