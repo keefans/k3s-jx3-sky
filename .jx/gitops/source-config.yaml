@@ -9,5 +9,6 @@ spec:
     providerKind: github
     repositories:
     - name: jenkins-teeest
+    - name: test-project-jenkins
     - name: text12
     scheduler: in-repo
