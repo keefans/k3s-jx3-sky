@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: jenkins-teeest
+    - name: python-http
     - name: python-http-test01
     - name: test-project
     - name: test-project-jenkins
