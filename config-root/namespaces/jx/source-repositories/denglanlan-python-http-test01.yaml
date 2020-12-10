@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: denglanlan
+    provider: github
+    repository: python-http-test01
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: denglanlan-python-http-test01
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/denglanlan/python-http-test01.git
+  org: denglanlan
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: python-http-test01
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/denglanlan/python-http-test01
