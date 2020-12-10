@@ -7,6 +7,10 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        denglanlan/jenkins-teeest: true
+        denglanlan/test-project: true
+        denglanlan/test-project-jenkins: true
+        denglanlan/text12: true
         keefans/k3s-jx3-sky: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +23,10 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        denglanlan/jenkins-teeest: merge
+        denglanlan/test-project: merge
+        denglanlan/test-project-jenkins: merge
+        denglanlan/text12: merge
         keefans/k3s-jx3-sky: merge
       queries:
       - labels:
@@ -31,6 +39,10 @@ data:
         - needs-rebase
         repos:
         - keefans/k3s-jx3-sky
+        - denglanlan/jenkins-teeest
+        - denglanlan/test-project-jenkins
+        - denglanlan/test-project
+        - denglanlan/text12
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +53,10 @@ data:
         - needs-rebase
         repos:
         - keefans/k3s-jx3-sky
+        - denglanlan/jenkins-teeest
+        - denglanlan/test-project-jenkins
+        - denglanlan/test-project
+        - denglanlan/text12
       target_url: http://dashboard-jx.jx3.sky-cloud.net
 kind: ConfigMap
 metadata:
